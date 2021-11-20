@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    <title>Counter</title>
+    </head>
+    <body>
+        <main class="main">
+			<section>
+                <h1>Welcome to the Great Number Game</h1>
+                <h4>I am thinking of a number between 1 and 100</h4>
+                <h5>Take a guess!</h5>
+                <form action="/" method="POST">
+                    <div class="guessInput">
+                        <input type="text" name="numGuess">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <div class="gusses" >
+                    
+                        <% if( num === "right" ){ %>
+                            <div class="answer">
+                                <p>You got it right!</p>
+                            </div>
+                            <form action="/reset" method="POST">
+                                <button type="submit">Play Again</button>
+                            </form>
+                            <% } %>
+                            <% if( num === "high" ){ %>
+                                <div class="answerLow">
+                                    <p>Too High!</p>
+                                </div>
+                            <% } %>
+                        <% if( num === "low" ){ %>
+                            <div class="answerLow">
+                                <p>Too Low!</p>
+                            </div>
+                        <% } %>
+                </div>
+            </section>
+		</main>
+    </body>
+</html>

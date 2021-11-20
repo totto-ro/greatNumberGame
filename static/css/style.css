@@ -1,0 +1,99 @@
+.main{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    font-family: sans-serif;
+}
+
+section{
+    display: block;
+    text-align: center;
+    margin: 80px;
+    height: 100%;
+    font-size: 50px;
+    width: 1600px;
+    font-family: sans-serif;
+}
+
+h1{
+    padding: 40px;
+}
+
+h5{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.guessInput{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px 500px;
+}
+
+input{
+    margin: 20px 150px;
+    padding: 10px;
+    font-size: 35px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button{
+    margin: 0px 150px;
+    padding: 10px;
+    font-size: 35px;
+    background-color: dodgerblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 7px rgb(0, 0, 0);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: gold;
+    color: white;
+}
+
+.answer{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color:lightseagreen;
+    width: 500px;
+    height: 300px;
+    margin-left: 550px;
+    margin-right: 650px;
+}
+
+.answerLow{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color:royalblue;
+    width: 500px;
+    height: 300px;
+    margin-left: 550px;
+    margin-right: 650px;
+}
+
+.answerLow{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: crimson;
+    width: 500px;
+    height: 300px;
+    margin-left: 550px;
+    margin-right: 650px;
+}
+
+p{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 70px;
+    color: white; 
+}
